@@ -9,6 +9,7 @@ export const StyledSuggestions = styled.section`
   @media screen and (max-device-width: 450px) {
     width: 95%;
     margin: 0 auto;
+    margin-bottom: 30px;
   }
 `
 
@@ -75,6 +76,14 @@ export const StyledListing = styled.div`
       padding: 7px 20px;
       font-size: 16px;
       margin-bottom: 22px;
+    }
+
+    @media screen and (max-device-width: 450px) {
+      width: 100%;
+
+      h4 {
+        margin-right: 50px;
+      }
     }
   }
 
@@ -143,20 +152,34 @@ export const StyledSuggestedPages = styled.div`
 
   .single-listing {
     color: #490057;
+    justify-content: space-between;
 
     h4 {
-      margin-right: 10px;
       font-size: 0.9rem;
+      margin: 0;
     }
 
     button {
       font-size: 0.8rem;
-      margin-right: 10px;
+      margin: 0;
     }
 
     .font {
-      /* align-self: center; */
-      margin-top: 10px;
+      margin-top: 7px;
+      margin-left: 10px;
+      font-size: 1.2rem;
+    }
+
+    @media screen and (max-device-width: 450px) {
+      width: 100%;
+
+      h4 {
+        margin-right: 30px;
+      }
+
+      button {
+        margin-right: 20px;
+      }
     }
   }
 
