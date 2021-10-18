@@ -41,6 +41,12 @@ export const StyledListing = styled.div`
   display: flex;
   align-items: flex-start;
   margin-bottom: 40px;
+  width: 100%;
+  /* justify-content: space-between; */
+
+  & > div {
+    width: 100%;
+  }
 
   img {
     width: 40px;
@@ -50,6 +56,7 @@ export const StyledListing = styled.div`
 
   .single-listing {
     display: flex;
+    width: 100%;
     justify-content: space-between;
 
     h4 {
@@ -155,7 +162,7 @@ export const StyledSuggestedPages = styled.div`
     justify-content: space-between;
 
     h4 {
-      font-size: 0.9rem;
+      font-size: 1.2rem;
       margin: 0;
     }
 
