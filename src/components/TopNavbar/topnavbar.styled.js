@@ -16,6 +16,11 @@ export const StyledNavbarContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (max-device-width: 450px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 `
 
 export const StyledProfileDetails = styled.div`
@@ -35,7 +40,6 @@ export const StyledProfileDetails = styled.div`
 
   p {
     font-size: 15px;
-    /* padding: 0 5px; */
   }
 `
 
@@ -63,7 +67,6 @@ export const StyledMenuItems = styled.div`
 
   input {
     width: 250px;
-    /* height: 32px; */
     font-size: 15px;
     color: #fff;
     background: #490057 0% 0% no-repeat padding-box;
@@ -76,6 +79,10 @@ export const StyledMenuItems = styled.div`
     ::placeholder {
       color: #fff;
       opacity: 1;
+    }
+
+    @media screen and (max-device-width: 450px) {
+      display: none;
     }
   }
 `

@@ -5,6 +5,7 @@ export const StyledProfile = styled.div`
   background: #9400b11c 0% 0% no-repeat padding-box;
   border-radius: 19px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 30px 30px;
@@ -12,6 +13,11 @@ export const StyledProfile = styled.div`
   img {
     width: 100px;
     height: 100px;
+  }
+
+  @media screen and (max-device-width: 450px) {
+    justify-content: center;
+    text-align: center;
   }
 `
 
@@ -37,6 +43,11 @@ export const StyledProfileDetails = styled.div`
   p {
     color: #787878;
     font-size: 12px;
+  }
+
+  @media screen and (max-device-width: 450px) {
+    width: 95%;
+    margin: 0 auto;
   }
 `
 
@@ -76,5 +87,10 @@ export const StyledProfileStats = styled.div`
   p {
     color: #490057;
     font-size: 10px;
+  }
+
+  @media screen and (max-device-width: 450px) {
+    width: 95%;
+    margin: 0 auto;
   }
 `

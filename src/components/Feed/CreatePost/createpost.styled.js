@@ -8,9 +8,8 @@ export const StyledCreatePost = styled.div`
   border-radius: 30px;
 
   form {
-    /* width: 90%; */
-    /* margin: 0 auto; */
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 
@@ -25,6 +24,11 @@ export const StyledCreatePost = styled.div`
         color: #490057;
         font-size: 14px;
       }
+
+      @media screen and (max-device-width: 450px) {
+        text-align: center;
+        width: 100%;
+      }
     }
 
     button {
@@ -37,6 +41,15 @@ export const StyledCreatePost = styled.div`
       margin-top: 18px;
       font-size: 18px;
       margin-bottom: 22px;
+
+      @media screen and (max-device-width: 450px) {
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+
+    @media screen and (max-device-width: 450px) {
+      justify-content: center;
     }
   }
 
@@ -53,10 +66,12 @@ export const StyledCreatePost = styled.div`
       color: #490057;
     }
 
-    img {
-      filter: invert(0.4) sepia(0.5) saturate(20) hue-rotate(248.4deg)
-        brightness(0.81);
-      height: 18px;
+    @media screen and (max-device-width: 450px) {
+      flex-wrap: wrap;
+
+      div {
+        width: 40%;
+      }
     }
   }
 `

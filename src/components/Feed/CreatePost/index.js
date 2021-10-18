@@ -1,9 +1,8 @@
 import { StyledCreatePost } from './createpost.styled'
 
-import imagesIcon from '../../../assets/imagesIcon.svg'
-import videoIcon from '../../../assets/videoIcon.svg'
-import mapIcon from '../../../assets/map-marker.svg'
-import tagIcon from '../../../assets/tag.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faImage } from '@fortawesome/free-regular-svg-icons'
+import { faMapPin, faTag, faVideo } from '@fortawesome/free-solid-svg-icons'
 
 const CreatePost = () => {
   return (
@@ -14,19 +13,19 @@ const CreatePost = () => {
       </form>
       <div className='media'>
         <div>
-          <img src={imagesIcon} alt='gallery' />
+          <FontAwesomeIcon icon={faImage} />
           <p>Image</p>
         </div>
         <div>
-          <img src={videoIcon} alt='gallery' />
+          <FontAwesomeIcon icon={faVideo} />
           <p>Videos</p>
         </div>
         <div>
-          <img src={mapIcon} alt='gallery' />
+          <FontAwesomeIcon icon={faMapPin} />
           <p>Location</p>
         </div>
         <div>
-          <img src={tagIcon} alt='gallery' />
+          <FontAwesomeIcon icon={faTag} />
           <p>Tags</p>
         </div>
       </div>

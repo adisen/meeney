@@ -5,6 +5,11 @@ export const StyledSuggestions = styled.section`
   flex-direction: column;
   align-items: center;
   width: 25%;
+
+  @media screen and (max-device-width: 450px) {
+    width: 95%;
+    margin: 0 auto;
+  }
 `
 
 export const StyledListings = styled.div`
@@ -23,6 +28,10 @@ export const StyledListings = styled.div`
     border-radius: 16px;
     padding: 20px;
     overflow: hidden;
+    width: 100%;
+  }
+
+  @media screen and (max-device-width: 450px) {
     width: 100%;
   }
 `
@@ -149,5 +158,9 @@ export const StyledSuggestedPages = styled.div`
       /* align-self: center; */
       margin-top: 10px;
     }
+  }
+
+  @media screen and (max-device-width: 450px) {
+    width: 100%;
   }
 `

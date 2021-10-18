@@ -103,4 +103,13 @@ export const StyledPost = styled.div`
       justify-content: space-between;
     }
   }
+
+  @media screen and (max-device-width: 450px) {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+    .post-img {
+      width: 100%;
+    }
+  }
 `

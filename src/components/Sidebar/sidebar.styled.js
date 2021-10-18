@@ -5,6 +5,11 @@ export const StyledSidebar = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (max-device-width: 450px) {
+    width: 95%;
+    margin: 0 auto;
+  }
 `
 
 export const StyledSwitchAccount = styled.div`
@@ -28,6 +33,10 @@ export const StyledSwitchAccount = styled.div`
     background: #b8b8b8 0% 0% no-repeat padding-box;
     color: #fff;
     border-radius: 10px;
+  }
+
+  @media screen and (max-device-width: 450px) {
+    width: 100%;
   }
 `
 
@@ -73,13 +82,17 @@ export const StyledMenuItems = styled.div`
     display: inline-block;
     font-size: 18px;
   }
+
+  @media screen and (max-device-width: 450px) {
+    width: 100%;
+  }
 `
 
 export const StyledPages = styled.div`
   border-radius: 13px;
   width: 90%;
   background-color: #fff;
-  margin-bottom: 500px;
+  margin-bottom: 50px;
 
   .headerTitle {
     display: flex;
@@ -92,6 +105,10 @@ export const StyledPages = styled.div`
     color: #490057;
     display: inline-block;
     font-weight: normal;
+  }
+
+  @media screen and (max-device-width: 450px) {
+    width: 100%;
   }
 `
 

@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const StyledFeedHeader = styled.div`
   display: flex;
   justify-content: space-around;
-  /* border-bottom: 1.5px solid #9b9b9b; */
   padding-bottom: 0;
 
   p {
@@ -19,7 +18,14 @@ export const StyledFeedHeader = styled.div`
     &.active {
       color: #490057;
       border-bottom: 5px solid #490057;
-      border
     }
+
+    @media screen and (max-device-width: 450px) {
+      width: 95%;
+    }
+  }
+
+  @media screen and (max-device-width: 450px) {
+    flex-wrap: wrap;
   }
 `
